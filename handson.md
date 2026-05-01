@@ -7,8 +7,25 @@
 ### Problem encountered - Local 1:  Not able to have access for the downloaded archive.  
    <img width="1419" height="274" alt="image" src="https://github.com/user-attachments/assets/28e95cb6-175f-47dd-86e0-81dd1073aced" />
    ### Resolution: Working after redownload.  Installation done.
+
 ### Problem encountered - Local 2:  Having issues upon application invocation.  It is not clear if the public/private network access to java.ps and the application should be provided.  It is disabled for this invocation.  There was a warning about having space in folder names, which was avoided/fixed.  There is also an error about availability / access to required details from SDK.  
-   ### Resolution:  Reinstallation, underwway.  Not sure if it will resolve.
+   ### Resolution:  None of the earlier issues encountered, upon reinstallation.
+
+### Problem encountered - Local 3:  Build fails with fatal error, error transcript is captured below.  Seemingl an installation related issue again.
+```
+C:/Users/Adminstrator/Desktop/LB_2025/VSDEdgeAI/VSDSquadronPRO/FreedomStudio-3-1-1-x86_64-w64-mingw32/FreedomStudio-3-1-1/SiFive/riscv64-unknown-elf-toolsuite-2.0.3/riscv64-unknown-elf/include/stdint.h:12:10: fatal error: machine/_default_types.h: No such file or directory
+   12 | #include <machine/_default_types.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [Makefile:1048: src/drivers/fixed-clock.o] Error 1
+make[2]: Leaving directory '/C/Users/Adminstrator/Desktop/LB_2025/VSDEdgeAI/VSDSquadronPRO/projects/bsp/build/debug'
+make[1]: Leaving directory '/C/Users/Adminstrator/Desktop/LB_2025/VSDEdgeAI/VSDSquadronPRO/projects/bsp/build/debug'
+make[1]: *** [Makefile:1318: install] Error 2
+make: *** [Makefile:485: /C/Users/Adminstrator/Desktop/LB_2025/VSDEdgeAI/VSDSquadronPRO/projects/bsp/install/lib/debug/stamp] Error 2
+"make all CONFIGURATION=debug" terminated with exit code 2. Build might be incomplete.
+```
+
+22:25:13 Build Failed. 4 errors, 0 warnings. (took 23s.162ms)
 
 # VSD RISC-V Edge-AI Workshop — SiFive FreedomStudio on GitHub Codespaces
 
