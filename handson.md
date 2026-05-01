@@ -6,6 +6,7 @@
 # VSD RISC-V Edge-AI Workshop — SiFive FreedomStudio on local computer
 ### Problem encountered - Local 1:  Not able to have access for the downloaded archive.  
    <img width="1419" height="274" alt="image" src="https://github.com/user-attachments/assets/28e95cb6-175f-47dd-86e0-81dd1073aced" />
+   
    ### Resolution: Working after redownload.  Installation done.
 
 ### Problem encountered - Local 2:  Having issues upon application invocation.  It is not clear if the public/private network access to java.ps and the application should be provided.  It is disabled for this invocation.  There was a warning about having space in folder names, which was avoided/fixed.  There is also an error about availability / access to required details from SDK.  
@@ -24,7 +25,8 @@ make[1]: *** [Makefile:1318: install] Error 2
 make: *** [Makefile:485: /C/Users/Adminstrator/Desktop/LB_2025/VSDEdgeAI/VSDSquadronPRO/projects/bsp/install/lib/debug/stamp] Error 2
 "make all CONFIGURATION=debug" terminated with exit code 2. Build might be incomplete.
 ```
-
+   ### Resolution:  TBD.
+   
 22:25:13 Build Failed. 4 errors, 0 warnings. (took 23s.162ms)
 
 # VSD RISC-V Edge-AI Workshop — SiFive FreedomStudio on GitHub Codespaces
@@ -60,6 +62,7 @@ GitHub will automatically start a new Codespace workspace configured for Freedom
 
 ### Problem encountered - Cloud 1:  Every few minutes the noVNC Desktop is getting disconnected.
    <img width="1484" height="711" alt="image" src="https://github.com/user-attachments/assets/0bf0a7fe-9d51-4619-bfaf-61c9300da233" />
+   
    ### Resolution:  TBD.
 
 ---
@@ -79,6 +82,7 @@ GitHub will automatically start a new Codespace workspace configured for Freedom
 
 ### Problem encountered - Cloud 2:  Encountering the following error upon (step 3.2) invocation of FreedomStudio-3-1-1.
    <img width="817" height="418" alt="image" src="https://github.com/user-attachments/assets/a966ff8f-c53b-4ce3-a842-31ef01f85d5a" />
+   
    ### Resolution:  Ignored.
    
 3. When prompted for a workspace, use the default:
@@ -94,6 +98,7 @@ GitHub will automatically start a new Codespace workspace configured for Freedom
       <img width="779" height="363" alt="image" src="https://github.com/user-attachments/assets/43fe7ea4-1783-4e06-8268-ca26508e50de" />
    
       <img width="1099" height="179" alt="image" src="https://github.com/user-attachments/assets/35f3bd5d-c2be-430e-b14e-1d7d7098a71f" />
+
       ### Resolution:  Manually provided the path as available in the VNC under /home/vscode/ insead of /home/vsduser/.
 
 ---
@@ -123,7 +128,7 @@ Inside the IDE:
 ### Problem encountered - Cloud 5:  Not able to build.  I can't see any hammer icon.  Refer to the screenshot above.
    ### Resolution:  Tried selecting freedom-e310-arty as the target and sifive-welcome as an example.  Still cannot see any hammer icon or able to build.
 
-### Problem encountered - Cloud 6:  But once the target and example are selected the pop-up grows beyond the screen size even on a fullscreen mode, and there is no scroller available to see action buttons below.  
+### Problem encountered - Cloud 6:  But once the target and example are selected the pop-up window grows beyond the screen size even on a fullscreen mode, and there is no scroller available to see action buttons below.  
    ### Resolution:  I had to try many things and figured out to resize the window to see the action buttons, but once resized, there is no way to validate the user entries in the absence of scroller option.  But now, I can see the "Next" and "Finish" buttons (but not any hammer icon), and able to start building by clicking on Finish button.  However, the build failed with 4 errors.
    <img width="1299" height="928" alt="image" src="https://github.com/user-attachments/assets/d65da668-8d92-4ac8-8f1a-8138f0573210" />
 
@@ -136,8 +141,10 @@ Inside the IDE:
 4. Run and debug using **QEMU** for software-level testing.
 ### Problem encountered -Cloud 8:  Build passes.  Not able to debug or run due to environment issues (_bc_ notfound and _echo_ having I/O error).
    <img width="1117" height="753" alt="image" src="https://github.com/user-attachments/assets/caeef623-392a-4a43-bb0e-2866031f8381" />
+   
+   ### Resolution:  TBD.
 ---
-
+   
 ## 6. Environment Details
 
 * Operating System: Ubuntu 22.04
