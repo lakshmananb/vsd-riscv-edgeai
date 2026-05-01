@@ -10,6 +10,9 @@
    ### Resolution: Working after redownload.  Installation done.
 
 ### Problem encountered - Local 2:  Having issues upon application invocation.  It is not clear if the public/private network access to java.ps and the application should be provided.  It is disabled for this invocation.  There was a warning about having space in folder names, which was avoided/fixed.  There is also an error about availability / access to required details from SDK.  
+   <img width="4000" height="1868" alt="1000641205" src="https://github.com/user-attachments/assets/eeff6ab2-09ad-4663-87c4-f873fe0ede6b" />
+   <img width="4000" height="1868" alt="1000641206" src="https://github.com/user-attachments/assets/cab4eb07-8f98-4015-9fcc-fb9a1617fe3a" />
+
    ### Resolution:  None of the earlier issues encountered, upon reinstallation.
 
 ### Problem encountered - Local 3:  Build fails with fatal error, error transcript is captured below.  Seemingl an installation related issue again.
@@ -25,6 +28,11 @@ make[1]: *** [Makefile:1318: install] Error 2
 make: *** [Makefile:485: /C/Users/Adminstrator/Desktop/LB_2025/VSDEdgeAI/VSDSquadronPRO/projects/bsp/install/lib/debug/stamp] Error 2
 "make all CONFIGURATION=debug" terminated with exit code 2. Build might be incomplete.
 ```
+   ### Resolution:  Issue resolved by providing private network access .js & to the application executable; and moving the entire application to a much shallower path from C: than a deeper one earlier.  Long paths are known to create problems in Windows.
+
+### Problem encountered - Local 4:  Build passes.  Not able to _debug_ or _run_ due to environment issues, due to _"bin"_ being _"null"_ (As earlier seen in virtual/cloud mode too).
+   <img width="1918" height="1008" alt="image" src="https://github.com/user-attachments/assets/c69a57ef-4b9a-4bc6-abb6-3684dddb313c" />
+
    ### Resolution:  TBD.
    
 22:25:13 Build Failed. 4 errors, 0 warnings. (took 23s.162ms)
@@ -139,7 +147,7 @@ Inside the IDE:
    ```
 
 4. Run and debug using **QEMU** for software-level testing.
-### Problem encountered -Cloud 8:  Build passes.  Not able to debug or run due to environment issues (_bc_ notfound and _echo_ having I/O error).
+### Problem encountered -Cloud 8:  Build passes.  Not able to debug or run due to environment issues (_bc_ notfound and _echo_ having I/O error), _"bin"_ being _"null"_.
    <img width="1117" height="753" alt="image" src="https://github.com/user-attachments/assets/caeef623-392a-4a43-bb0e-2866031f8381" />
    
    ### Resolution:  TBD.
