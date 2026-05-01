@@ -4,9 +4,11 @@
 ## Updated:  1st May 2026, 19:03 IST
 
 # VSD RISC-V Edge-AI Workshop — SiFive FreedomStudio on local computer
-### Problem encountered - 1:  Not able to have access for the downloaded archive.  
+### Problem encountered - Local 1:  Not able to have access for the downloaded archive.  
    <img width="1419" height="274" alt="image" src="https://github.com/user-attachments/assets/28e95cb6-175f-47dd-86e0-81dd1073aced" />
-   ### Resolution: Working after redownload.  Installation underway.
+   ### Resolution: Working after redownload.  Installation done.
+### Problem encountered - Local 2:  Having issues upon application invocation.  It is not clear if the public/private network access to java.ps and the application should be provided.  It is disabled for this invocation.  There was a warning about having space in folder names, which was avoided/fixed.  There is also an error about availability / access to required details from SDK.  
+   ### Resolution:  Reinstallation, underwway.  Not sure if it will resolve.
 
 # VSD RISC-V Edge-AI Workshop — SiFive FreedomStudio on GitHub Codespaces
 
@@ -39,8 +41,9 @@ GitHub will automatically start a new Codespace workspace configured for Freedom
    Click **vnc.html** to launch the full graphical desktop.
    ![Directory listing](images/4.jpg)
 
-### Problem encountered - 2:  Every few minutes the noVNC Desktop is getting disconnected.
+### Problem encountered - Cloud 1:  Every few minutes the noVNC Desktop is getting disconnected.
    <img width="1484" height="711" alt="image" src="https://github.com/user-attachments/assets/0bf0a7fe-9d51-4619-bfaf-61c9300da233" />
+   ### Resolution:  TBD.
 
 ---
 
@@ -57,7 +60,7 @@ GitHub will automatically start a new Codespace workspace configured for Freedom
 
    ![Terminal launch](images/5.jpg)
 
-### Problem encountered - 3:  Encountering the following error upon (step 3.2) invocation of FreedomStudio-3-1-1.
+### Problem encountered - Cloud 2:  Encountering the following error upon (step 3.2) invocation of FreedomStudio-3-1-1.
    <img width="817" height="418" alt="image" src="https://github.com/user-attachments/assets/a966ff8f-c53b-4ce3-a842-31ef01f85d5a" />
    ### Resolution:  Ignored.
    
@@ -70,7 +73,7 @@ GitHub will automatically start a new Codespace workspace configured for Freedom
    Then click **Launch**.
    ![Workspace dialog](images/6.jpg)
 
-   ### Problem encountered - 4:  Creation of workspace (Step:  3.4), default workspace path is not as specified in the notes / README.
+   ### Problem encountered - Cloud 3:  Creation of workspace (Step:  3.4), default workspace path is not as specified in the notes / README.
       <img width="779" height="363" alt="image" src="https://github.com/user-attachments/assets/43fe7ea4-1783-4e06-8268-ca26508e50de" />
    
       <img width="1099" height="179" alt="image" src="https://github.com/user-attachments/assets/35f3bd5d-c2be-430e-b14e-1d7d7098a71f" />
@@ -96,28 +99,26 @@ Inside the IDE:
 
 1. Go to **Sifive Tools -> Create Software Example Project -> Create a new Validation Project**.
 2. Select any example RISC-V or Edge-AI project folder.
-### Problem encountered - 5:  Not able to build, as it seems the target has to be specified.  Which target among the list to be selected for this workshop is not specified.
+### Problem encountered - Cloud 4:  Not able to build, as it seems the target has to be specified.  Which target among the list to be selected for this workshop is not specified.
 <img width="1346" height="949" alt="image" src="https://github.com/user-attachments/assets/3df6d569-948b-47cd-9c77-4080184efe84" />
 
 3. Build using the hammer icon or by pressing `Ctrl+B`.
-### Problem encountered - 6:  Not able to build.  I can't see any hammer icon.  Refer to the screenshot above.
+### Problem encountered - Cloud 5:  Not able to build.  I can't see any hammer icon.  Refer to the screenshot above.
    ### Resolution:  Tried selecting freedom-e310-arty as the target and sifive-welcome as an example.  Still cannot see any hammer icon or able to build.
 
-### Problem encountered - 7:  But once the target and example are selected the pop-up grows beyond the screen size even on a fullscreen mode, and there is no scroller available to see action buttons below.  
+### Problem encountered - Cloud 6:  But once the target and example are selected the pop-up grows beyond the screen size even on a fullscreen mode, and there is no scroller available to see action buttons below.  
    ### Resolution:  I had to try many things and figured out to resize the window to see the action buttons, but once resized, there is no way to validate the user entries in the absence of scroller option.  But now, I can see the "Next" and "Finish" buttons (but not any hammer icon), and able to start building by clicking on Finish button.  However, the build failed with 4 errors.
    <img width="1299" height="928" alt="image" src="https://github.com/user-attachments/assets/d65da668-8d92-4ac8-8f1a-8138f0573210" />
 
- ### Problem encountered - 8:  Build failed with 4 errors.
+### Problem encountered - Cloud 7:  Build failed with 4 errors.
    ### Resolution:  Followed steps as in the last video #29 under "QEMU based simulations" in the course dashboard https://vsdiat.vlsisystemdesign.com/dashboard/13.  Changed target to qemu_sifive_e31 & changing the bsp/settings.mk to set compatible RISCV_ARCH as below.
    ```
    RISCV_ARCH = rv32imac_zicsr_zifencei
    ```
 
-   ### Problem encountered - 9:  Build passes.  Not able to debug due to environments issues (bc notfound and echo having I/O error).
-   <img width="1117" height="753" alt="image" src="https://github.com/user-attachments/assets/caeef623-392a-4a43-bb0e-2866031f8381" />
-
 4. Run and debug using **QEMU** for software-level testing.
-
+### Problem encountered -Cloud 8:  Build passes.  Not able to debug or run due to environment issues (_bc_ notfound and _echo_ having I/O error).
+   <img width="1117" height="753" alt="image" src="https://github.com/user-attachments/assets/caeef623-392a-4a43-bb0e-2866031f8381" />
 ---
 
 ## 6. Environment Details
