@@ -1,7 +1,7 @@
 # Running Notes for Hands-On Trial during the Workshop (May 1st to 10th, 2026)
 ## Author:  Lakshmanan B (https://github.com/lakshmananb)
 ## Created:  1st May 2026, 17:30 IST
-## Updated:  1st May 2026, 22:40 IST
+## Updated:  2nd May 2026, 00:59 IST
 
 # VSD RISC-V Edge-AI Workshop — SiFive FreedomStudio on local computer
 ### Problem encountered - Local 1:  Not able to have access for the downloaded archive.  
@@ -35,8 +35,6 @@ make: *** [Makefile:485: /C/Users/Adminstrator/Desktop/LB_2025/VSDEdgeAI/VSDSqua
 
    ### Resolution:  TBD.
    
-22:25:13 Build Failed. 4 errors, 0 warnings. (took 23s.162ms)
-
 # VSD RISC-V Edge-AI Workshop — SiFive FreedomStudio on GitHub Codespaces
 
 This repository provides a complete cloud-based environment for the **RISC-V Edge-AI Workshop** using **SiFive FreedomStudio 3.1.1**.
@@ -141,6 +139,9 @@ Inside the IDE:
    <img width="1299" height="928" alt="image" src="https://github.com/user-attachments/assets/d65da668-8d92-4ac8-8f1a-8138f0573210" />
 
 ### Problem encountered - Cloud 7:  Build failed with 4 errors.
+   ```
+   22:25:13 Build Failed. 4 errors, 0 warnings. (took 23s.162ms)
+   ```
    ### Resolution:  Followed steps as in the last video #29 under "QEMU based simulations" in the course dashboard https://vsdiat.vlsisystemdesign.com/dashboard/13.  Changed target to qemu_sifive_e31 & changing the bsp/settings.mk to set compatible RISCV_ARCH as below.
    ```
    RISCV_ARCH = rv32imac_zicsr_zifencei
