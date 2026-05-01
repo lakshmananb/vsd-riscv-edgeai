@@ -9,7 +9,7 @@
    
    ### Resolution: Working after redownload.  Installation done.
 
-### Problem encountered - Local 2:  Having issues upon application invocation.  It is not clear if the public/private network access to java.ps and the application should be provided.  It is disabled for this invocation.  There was a warning about having space in folder names, which was avoided/fixed.  There is also an error about availability / access to required details from SDK.  
+### Problem encountered - Local 2:  Having issues upon application invocation.  It is not clear if the public/private network access to _Node.js_ and the application _(FreedomStudio-3-1-1.exe)_ should be provided.  It is disabled for this invocation.  There was a warning about having space in folder names, which was avoided/fixed.  There is also an error about availability / access to required details from SDK.  
    <img width="4000" height="1868" alt="1000641205" src="https://github.com/user-attachments/assets/eeff6ab2-09ad-4663-87c4-f873fe0ede6b" />
    <img width="4000" height="1868" alt="1000641206" src="https://github.com/user-attachments/assets/cab4eb07-8f98-4015-9fcc-fb9a1617fe3a" />
 
