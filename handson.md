@@ -1,7 +1,7 @@
 # Running Notes for Hands-On Trial during the Workshop (May 1st to 10th, 2026)
 ## Author:  Lakshmanan B (https://github.com/lakshmananb)
 ## Created:  1st May 2026, 17:30 IST
-## Updated:  1st May 2026, 19:03 IST
+## Updated:  1st May 2026, 22:40 IST
 
 # VSD RISC-V Edge-AI Workshop — SiFive FreedomStudio on local computer
 ### Problem encountered - Local 1:  Not able to have access for the downloaded archive.  
